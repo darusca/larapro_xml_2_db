@@ -1,0 +1,12 @@
+{
+    "name": "eon/dario",
+    "description": "This package creates entries to the Database using Attributes or Elements from the provided XML File.",
+    "authors": [
+        {
+            "name": "Dario Alfredo",
+            "email": "dariohoa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
