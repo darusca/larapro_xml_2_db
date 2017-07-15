@@ -1,10 +1,10 @@
 {
-    "name": "eon2/dario",
-    "description": "This package creates entries to the Database using Attributes or Elements from the provided XML File.",
+    "name": "webnanogy/dario",
+    "description": "SimpleXML a given XML file. Extract data and store",
     "authors": [
         {
             "name": "Dario Alfredo",
-            "email": "dariohoa@gmail.com"
+            "email": "dario@gwebnanogy.co.za"
         }
     ],
     "minimum-stability": "dev",
