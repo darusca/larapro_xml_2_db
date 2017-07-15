@@ -1,5 +1,5 @@
 {
-    "name": "eon/dario",
+    "name": "eon2/dario",
     "description": "This package creates entries to the Database using Attributes or Elements from the provided XML File.",
     "authors": [
         {
