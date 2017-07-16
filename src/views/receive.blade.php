@@ -25,9 +25,6 @@
             @if ($k === 'Title')
                 <div id="title" data-title-id="{{ $v }}"></div>
             @endif
-            @if ($k === 'Title')
-                <div id="title" data-title-id="{{ $v }}"></div>
-            @endif
             @if ($k === 'Description')
                 <div id="description" data-description-id="{{ $v }}"></div>
             @endif
