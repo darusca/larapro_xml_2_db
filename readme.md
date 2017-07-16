@@ -75,12 +75,16 @@ The blade template receives the the associative array() containing the config.XM
 3. Create/acess the destination server database
 Note: Change this app's '.env' file so it matches the destination's server environment:
 
-
     DB_CONNECTION='destination IP address'
+    
     DB_HOST='destination IP address'
+    
     DB_PORT='destination DBMS connection port'
+    
     DB_DATABASE='destination DBMS db name'
+    
     DB_USERNAME='destination DBMS user name'
+    
     DB_PASSWORD='destination DBMS user password'
 
 4. Migrate the tables by running:
