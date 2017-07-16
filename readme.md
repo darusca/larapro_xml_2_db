@@ -1,4 +1,4 @@
-### 1. PROJECT DETAILS
+### 1. Project Details
 
 #### 1.1 Design Patterns:
 
@@ -44,7 +44,7 @@ The blade template receives the the associative array() containing the config.XM
 * Display server response.
 
 
-### 3. BACK-END TECHNICAL DETAILS
+### 3. Back-End Technical Details
 ##### Input:
 * The server accepts two (get/post) requests in the routes, namely 'receive' and 'create'
 * Request handling logic are mapped to 2 Controller class methods respectively
