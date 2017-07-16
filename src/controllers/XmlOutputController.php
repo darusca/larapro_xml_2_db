@@ -21,7 +21,7 @@ class XmlOutputController extends Controller
     public function receive()
     {
         return view(
-            'dario::receive',
+            'eon.dario.receive',
             [
                 'xmlOutput' => XmlValidator::getXmlOutput(),
                 'xmlFileName' => XmlValidator::getXmlFilePathBaseName()
