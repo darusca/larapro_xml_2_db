@@ -4,7 +4,7 @@ namespace Eon\Dario;
 
 class XmlValidationUtility
 {
-    private static $xmlFilePath = __DIR__.'/config.xml';
+    private static $xmlFilePath = __DIR__ . '/../../config.xml';
     private static $xmlOutput = [];
 
     /**
