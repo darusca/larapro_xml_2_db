@@ -1,6 +1,6 @@
-####1. PROJECT DETAILS
+1. PROJECT DETAILS
 
-#####1.1	Design Patterns:
+1.1	Design Patterns:
 
 MVC,
 Repository
