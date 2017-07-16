@@ -128,4 +128,4 @@ PSR-1/2/3/4
 * For PHPUnit testing performance this app does not access the model directly. So it is possible to bypass database, otherwise, would be expensive to make database calls
 
 #### Credits
-http:://webnanogy.co.za/about
+http://webnanogy.co.za/about
