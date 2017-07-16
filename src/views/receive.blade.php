@@ -50,13 +50,13 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous">
 
-<script src="{{ asset('js/xml-output-create.js') }}"></script>
-
 <script>
     var title = $('#title').data("title-id");
     var description = $('#description').data("description-id");
     var launchUrl = $('#launch-url').data("launch-url-id");
     var iconUrl = $('#icon-url').data("icon-url-id");
+    var URL = '{{ env('APP_URL') }}';
 </script>
+<script src="{{ asset('js/xml-output-create.js') }}"></script>
 
 </body>

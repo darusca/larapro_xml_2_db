@@ -1,4 +1,4 @@
 <?php
 
 Route::get('receive', 'Eon\Dario\XmlOutputController@receive');
-Route::post('undefined/create', 'Eon\Dario\XmlOutputController@create');
+Route::post('create', 'Eon\Dario\XmlOutputController@create');
