@@ -61,6 +61,7 @@ The blade template receives the the associative array() containing the config.XM
 ### 4. FRAMEWORK
 #### Laravel 5.4 (PHP v5.6)
 **Q:** Why Laravel?
+
 **A:** Choices! Everybody is using it and it works well. I just like the brand, though some online resources ought to be free, as is most community support
 
 ### 5. USAGE
@@ -68,7 +69,7 @@ The blade template receives the the associative array() containing the config.XM
 1. Install Laravel 5.4
 2. Run the following command inside this app's root directory
 
-    composer install
+        composer install
 
 3. Create/acess the destination server database
 Note: Change this app's '.env' file so it matches the destination's server environment:
@@ -82,7 +83,7 @@ Ex: DB_CONNECTION='destination db connection'
 
 4. Migrate the tables by running:
     
-    php artisan migrate:refresh --seed
+       php artisan migrate:refresh --seed
 
 Note: The command above installs Laravel's default migrations with timestamps fields
 
@@ -99,7 +100,7 @@ So the code is strongly coupled around the given config file, and will choke wit
 All functionality required to fulfill most of this project's requirements was implemented with the Laravel ecosystem and PHP native functions.
 
 ### 7. Coding Standards:
-   PSR-1/2/3/4
+PSR-1/2/3/4
 
 ### 8. SCALING CONSIDERATIONS
 * This app design is Decoupled with separate concerns for Presentation and Business logic, allowing for scalability of this package
@@ -108,7 +109,7 @@ All functionality required to fulfill most of this project's requirements was im
 * No Form here means no need to store flashed old input Session Data in the event of errors
 * Packages folder structure enables future growth, such as Models, Assets and other sub-folder structures
 
-### . PERFORMANCE CONSIDERATIONS
+### 9. PERFORMANCE CONSIDERATIONS
 * Data is posted asynchronously so the UI (User Interface) is not blocked or stalled, improving performance
 * Laravel's cache design is optimal as well as the management of pool resources such as database connections and termination
 * No Form here means no need to store flashed old input Session Data in the event of errors
