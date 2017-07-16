@@ -20,12 +20,15 @@ class XmlOutputServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(realpath(__DIR__ . '/views'), 'dario');
+        $this->loadViewsFrom(realpath(__DIR__ .'/views'), 'dario');
 
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/eon/dario'),
+            __DIR__ .'/views' => base_path('resources/views/eon/dario'),
+        ], 'views');
+
+        $this->publishes([
             __DIR__.'/public' => public_path('js/eon/dario'),
-        ]);
+        ], 'public');
     }
 
     /**
@@ -35,7 +38,7 @@ class XmlOutputServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        require __DIR__ . '/routes.php';
+        require __DIR__ .'/routes.php';
         $this->app->make('Eon\Dario\XmlOutputController');
     }
 }
