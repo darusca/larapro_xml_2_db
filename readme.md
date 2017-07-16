@@ -106,8 +106,6 @@ PSR-1/2/3/4
 ### 8. Scaling Considerations
 * This app design is Decoupled with separate concerns for Presentation and Business logic, allowing for scalability of this package
 * Decoupling also increases the lifetime since it is not tied to any technology or concrete implementations
-* Laravel's cache design is optimal as well as the management of pool resources such as database connections and termination
-* No Form here means no need to store flashed old input Session Data in the event of errors
 * Packages folder structure enables future growth, such as Models, Assets and other sub-folder structures
 
 ### 9. Performance Considerations
