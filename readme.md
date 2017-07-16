@@ -75,6 +75,7 @@ The blade template receives the the associative array() containing the config.XM
 Note: Change this app's '.env' file so it matches the destination's server environment:
 
 Ex: DB_CONNECTION='destination db connection'
+
     DB_HOST='destination IP address'
     DB_PORT='destination DBMS connection port'
     DB_DATABASE='destination DBMS db name'
