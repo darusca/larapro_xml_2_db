@@ -77,6 +77,7 @@ The blade template receives the the associative array() containing the config.XM
         composer install
 
 3. Modify .env DB
+
 Ex: DB_CONNECTION='target DBMS'    
     DB_HOST='target IP address'    
     DB_PORT='target DBMS connection port'    
@@ -97,7 +98,8 @@ Ex: DB_CONNECTION='target DBMS'
        php artisan vendor:publish --tag=public --force
        
 ### 5.2 Run Laravel
-Visit http://your/target/app/url/receive
+Run Laravel home page and append receive
+EX: http.../localhost/output/public/receive
 
 ### 6. Assumptions
 Given the spec, the assumptions follow:
