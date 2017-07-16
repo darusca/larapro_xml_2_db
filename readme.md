@@ -78,12 +78,12 @@ The blade template receives the the associative array() containing the config.XM
 
 3. Modify .env DB
 
-Ex: DB_CONNECTION='target DBMS'    
-    DB_HOST='target IP address'    
-    DB_PORT='target DBMS connection port'    
-    DB_DATABASE='target DBMS db name'    
-    DB_USERNAME='target DBMS user name'    
-    DB_PASSWORD='target DBMS user password'
+   Ex: DB_CONNECTION='target DBMS'    
+       DB_HOST='target IP address'    
+       DB_PORT='target DBMS connection port'    
+       DB_DATABASE='target DBMS db name'    
+       DB_USERNAME='target DBMS user name'    
+       DB_PASSWORD='target DBMS user password'
     
 4. Change the .env file 'APP_URL' for the target server
    EX: APP_URL='target server app url'
