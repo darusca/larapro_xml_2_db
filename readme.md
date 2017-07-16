@@ -90,7 +90,7 @@ The blade template receives the the associative array() containing the config.XM
 
 4. Migrate the package/laravel tables by running:
 
-       php artisan migrate:refresh --seed
+       php artisan migrate
 
 5. Publish assets
 
