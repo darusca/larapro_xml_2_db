@@ -57,6 +57,6 @@
     var iconUrl = $('#icon-url').data("icon-url-id");
     var URL = '{{ env('APP_URL') }}';
 </script>
-<script src="{{ asset('js/xml-output-create.js') }}"></script>
+<script src="{{ asset('js/eon/dario/js/xml-output-create.js') }}"></script>
 
 </body>
