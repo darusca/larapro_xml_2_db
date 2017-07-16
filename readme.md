@@ -30,42 +30,41 @@ Virtual Box, Vagrant, Centos 7, PHP 5.6, MySQL 14.14, PHPMyAdmin, git, composer,
 * XML PHP Extension
 
 ### 2. Front-End Technical Details
-
-##### Input: the config.XML
+##### INPUT: the config.XML
 The blade template receives the the associative array() containing the config.XML data
 
-##### Process:
+##### PROCESS:
 * The *Blade engine iterates*, *displays and attributes (custom 'data-*' attributes)* this *associative array* data.
 * *JQuery stores* these *'data-*'* into variables.
 * A *JavaScript* Object (class) *initializes* JQuery, *binds/fires* the button click event, and *processes* server response.
 * *JQuery* asynchronously *posts* the data to *'/create'* route
-##### Output:
+##### OUTPUT:
 * Client is *notified* when *sending/saving* ('button is disabled'), and on saved ('on success button is enabled').
 * Display server response.
 
 
 ### 3. BACK-END TECHNICAL DETAILS
-##### Input:
+##### INPUT:
 * The server accepts two (get/post) requests in the routes, namely 'receive' and 'create'
 * Request handling logic are mapped to 2 Controller class methods respectively
-##### Process:
+##### PROCESS:
 * An Utility class parses the config.XML file, using the native 'simplexml_load_file()' PHP function
 * *'simplexml_load_file(config.XML)'* returns an associative array() containing the config.XML data (ex: 'title', 'description' ...)
 * These data is persisted in the database during the click event process from the front-end
 
 **Note:** This project uses the SimpleXML - PHP5’s new API for accessing the contents of XML documents.
 
-##### Output:
+##### OUTPUT:
 * The Controller returns the package view with this associative array()
 * When the data is to be persisted to the db, the Controller responds to the asynchronous call appropriately
 
-### 4. Framework
+### 4. FRAMEWORK
 #### Laravel 5.4 (PHP v5.6)
 **Q:** Why Laravel?
 
 **A:** Choices! Everybody is using it and it works well. I just like the brand, though some online resources ought to be free, as is most community support
 
-### 5. Usage
+### 5. USAGE
 #### 5.1 Basic Setup:
 1. Install Laravel 5.4
 2. Run the following command inside this app's root directory
@@ -75,8 +74,7 @@ The blade template receives the the associative array() containing the config.XM
 3. Create/acess the destination server database
 Note: Change this app's '.env' file so it matches the destination's server environment:
 
-
-    DB_CONNECTION='destination IP address'
+Ex: DB_CONNECTION='destination db connection'
     DB_HOST='destination IP address'
     DB_PORT='destination DBMS connection port'
     DB_DATABASE='destination DBMS db name'
@@ -89,7 +87,7 @@ Note: Change this app's '.env' file so it matches the destination's server envir
 
 Note: The command above installs Laravel's default migrations with timestamps fields
 
-### 6. Assumptions
+### 6. ASSUMPTIONS
 Given the spec, the assumptions follow:
 ###### Routes:
 'receive' and 'create'
@@ -104,14 +102,14 @@ All functionality required to fulfill most of this project's requirements was im
 ### 7. Coding Standards:
 PSR-1/2/3/4
 
-### 8. Scaling Considerations
+### 8. SCALING CONSIDERATIONS
 * This app design is Decoupled with separate concerns for Presentation and Business logic, allowing for scalability of this package
 * Decoupling also increases the lifetime since it is not tied to any technology or concrete implementations
 * Laravel's cache design is optimal as well as the management of pool resources such as database connections and termination
 * No Form here means no need to store flashed old input Session Data in the event of errors
 * Packages folder structure enables future growth, such as Models, Assets and other sub-folder structures
 
-### 9. Performance Considerations
+### 9. PERFORMANCE CONSIDERATIONS
 * Data is posted asynchronously so the UI (User Interface) is not blocked or stalled, improving performance
 * Laravel's cache design is optimal as well as the management of pool resources such as database connections and termination
 * No Form here means no need to store flashed old input Session Data in the event of errors
