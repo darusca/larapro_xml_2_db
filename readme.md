@@ -66,27 +66,40 @@ The blade template receives the the associative array() containing the config.XM
 **A:** Choices! Everybody is using it and it works well. I just like the brand, though some online resources ought to be free, as is most community support
 
 ### 5. Usage
-#### 5.1 Basic Setup:
+#### 5.1 Installation:
 1. Install Laravel 5.4
+2. Install this package
+
+        composer require webnanogy/dario
+
 2. Run the following command inside this app's root directory
 
         composer install
 
-3. Create/acess the destination server database
-Note: Change this app's '.env' file so it matches the destination's server environment:
+3. Modify .env DB
 
-    DB_CONNECTION='destination DBMS'    
-    DB_HOST='destination IP address'    
-    DB_PORT='destination DBMS connection port'    
-    DB_DATABASE='destination DBMS db name'    
-    DB_USERNAME='destination DBMS user name'    
-    DB_PASSWORD='destination DBMS user password'
+Ex: DB_CONNECTION='target DBMS'    
+    DB_HOST='target IP address'    
+    DB_PORT='target DBMS connection port'    
+    DB_DATABASE='target DBMS db name'    
+    DB_USERNAME='target DBMS user name'    
+    DB_PASSWORD='target DBMS user password'
+    
+4. Change the .env file 'APP_URL' for the target server
+   EX: APP_URL='target server app url'
 
-4. Migrate the tables by running:
+4. Migrate the package/laravel tables by running:
 
        php artisan migrate:refresh --seed
 
-Note: The command above installs Laravel's default migrations with timestamps fields
+5. Publish assets
+
+       php artisan vendor:publish --tag=views --force
+       php artisan vendor:publish --tag=public --force
+       
+### 5.2 Run Laravel
+Run Laravel home page and append receive
+EX: http.../localhost/output/public/receive
 
 ### 6. Assumptions
 Given the spec, the assumptions follow:
