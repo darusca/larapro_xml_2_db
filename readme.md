@@ -109,6 +109,7 @@ Given the spec, the assumptions follow:
 'receive' and 'create'
 
 ###### The config.XML File:
+The config.XML path will be defined in the *.env* file
 Because it is a configuration file, I assumed that the structure will not change often ('from time to time').
 So the code is strongly coupled around the given config file, and will choke with a different XML file structure.
 
