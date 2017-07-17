@@ -1,6 +1,6 @@
 ## 1. Project Details
 
-### 1.1 Design Patterns:
+#### 1.1 Design Patterns:
 
 *MVC,
 Repository*
@@ -21,7 +21,7 @@ Note: The specifics for this **Development Environment** follows:
 
 Virtual Box, Vagrant, Centos 7, PHP 5.6, MySQL 14.14, PHPMyAdmin, git, composer, artisan, pear, PHPStorm 2017 with XDebug, Code Sniffer (phpcs), GitHub);
 
-### 1.2 Web Server requirements:
+#### 1.2 Web Server requirements:
 * PHP >= 5.6.4
 * OpenSSL PHP Extension
 * PDO PHP Extension
