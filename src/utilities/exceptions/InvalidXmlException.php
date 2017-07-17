@@ -4,7 +4,7 @@ namespace Eon\Dario;
 
 class InvalidXmlException extends \Exception
 {
-    public function __construct($message = 'XML validation failed')
+    public function __construct($message = 'Invalid XML configuration')
     {
         parent::__construct($message);
     }
