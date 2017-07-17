@@ -6,11 +6,13 @@ use Tests\TestCase;
 
 class XmlValidationUtilityTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGet_GivenConfigXmlFilePath_returnsTrue()
+    public function testGet_GivenConfigXmlFile_returnsSimpleXMLObject()
     {
         $xmlFile = __DIR__ . '/config.xml';
-        dd($xmlFile);
-        $xmlData = fopen($xmlFile, 'r');
-        $this->assertEquals(1, count($xmlData));
+
+        $actual = simplexml_load_file($xmlFile);
+        $expected = new \SimpleXMLElement($xmlFile, 0, $data_is_url = true);
+
+        $this->assertEquals($expected, $actual);
     }
 }
