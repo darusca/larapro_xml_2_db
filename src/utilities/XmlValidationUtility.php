@@ -7,12 +7,21 @@ class XmlValidationUtility
     private static $xmlFilePath = './config.xml';
     private static $xmlOutput = [];
 
+    public static function getXml()
+    {
+        $configXmlPath = env('APP_URL') . env('CONFIG_DIR');
+
+        $configXml = simplexml_load_file($configXmlPath);
+
+        return $configXml;
+    }
+
     /**
      * @return array
      */
     public static function getXmlOutput()
     {
-        $xml = simplexml_load_file(self::$xmlFilePath);
+        $xml = self::getXml();
 
         $titles = $xml->xpath('//blti:title/text()');
         foreach ($titles as $title) {
