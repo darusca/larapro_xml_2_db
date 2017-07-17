@@ -97,8 +97,11 @@ The blade template receives the the associative array() containing the config.XM
        php artisan vendor:publish --tag=views
        php artisan vendor:publish --tag=public
        php artisan vendor:publish --tag=config
-       
-### 5.2 Run Laravel
+
+### 5.2 Setup Routes
+Copy the following to the apps 'routes/web.php'
+
+### 5.3 Run Laravel
 Run Laravel home page and append receive
 EX: http.../localhost/laravel/output/public/receive
 
@@ -111,22 +114,22 @@ Given the spec, the assumptions follow:
 Because it is a configuration file, I assumed that the structure will not change often ('from time to time').
 So the code is strongly coupled around the given config file, and will choke with a different XML file structure.
 
-### 6. Plugins and 3rd Party Libraries:
+### 7. Plugins and 3rd Party Libraries:
 All functionality required to fulfill most of this project's requirements was implemented with the Laravel ecosystem and PHP native functions.
 
-### 7. Coding Standards:
+### 8. Coding Standards:
 PSR-1/2/3/4
 
-### 8. Scaling Considerations
+### 9. Scaling Considerations
 * This app design is Decoupled with separate concerns for Presentation and Business logic, allowing for scalability of this package
 * Decoupling also increases the lifetime since it is not tied to any technology or concrete implementations
 * Packages folder structure enables future growth, such as Models, Assets and other sub-folder structures
 
-### 9. Performance Considerations
+### 10. Performance Considerations
 * Data is posted asynchronously so the UI (User Interface) is not blocked or stalled, improving performance
 * Laravel's cache design is optimal as well as the management of pool resources such as database connections and termination
 * No Form here means no need to store flashed old input Session Data in the event of errors
 * For PHPUnit testing performance this app does not access the model directly. So it is possible to bypass database, otherwise, would be expensive to make database calls
 
 #### Credits
-http://webnanogy.co.za/about
+[Dario Alfredo](http://webnanogy.co.za/about)
