@@ -29,6 +29,10 @@ class XmlOutputServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/public' => public_path('js/eon/dario'),
         ], 'public');
+
+        $this->publishes([
+            __DIR__.'/config.xml' => config_path('/../public/config_.xml'),
+        ], 'config');
     }
 
     /**

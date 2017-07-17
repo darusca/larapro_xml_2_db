@@ -92,14 +92,15 @@ The blade template receives the the associative array() containing the config.XM
 
        php artisan migrate
 
-5. Publish assets
+5. Publish the config.XML and assets
 
-       php artisan vendor:publish --tag=views --force
-       php artisan vendor:publish --tag=public --force
+       php artisan vendor:publish --tag=views
+       php artisan vendor:publish --tag=public
+       php artisan vendor:publish --tag=config
        
 ### 5.2 Run Laravel
 Run Laravel home page and append receive
-EX: http.../localhost/output/public/receive
+EX: http.../localhost/laravel/output/public/receive
 
 ### 6. Assumptions
 Given the spec, the assumptions follow:
