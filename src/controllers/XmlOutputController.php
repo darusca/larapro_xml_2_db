@@ -20,6 +20,7 @@ class XmlOutputController extends Controller
      */
     public function receive()
     {
+        XmlValidationUtility::getXml();
         return view(
             'eon.dario.receive',
             [
