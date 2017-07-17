@@ -31,7 +31,7 @@ class XmlOutputServiceProvider extends ServiceProvider
         ], 'public');
 
         $this->publishes([
-            __DIR__.'/config.xml' => config_path('/../public/config_.xml'),
+            __DIR__.'/config.xml' => config_path('/../public/config.xml'),
         ], 'config');
     }
 

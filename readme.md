@@ -94,9 +94,7 @@ The blade template receives the the associative array() containing the config.XM
 
 5. Publish the config.XML and assets
 
-       php artisan vendor:publish --tag=views
-       php artisan vendor:publish --tag=public
-       php artisan vendor:publish --tag=config
+       php artisan vendor:publish
 
 #### 5.2 Setup Routes
 Copy the following to the apps 'routes/web.php'
