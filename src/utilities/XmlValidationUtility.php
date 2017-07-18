@@ -4,16 +4,24 @@ namespace Eon\Dario;
 
 class XmlValidationUtility
 {
-    private static $xmlFilePath = './config.xml';
+    private static $xmlFilePath = '';
     private static $xmlOutput = [];
 
+    /**
+     * @return string
+     * @throws InvalidXmlException
+     */
     public static function getXml()
     {
-        $configXmlPath = env('APP_URL') . env('CONFIG_DIR');
+        self::$xmlFilePath = env('APP_URL') . env('CONFIG_DIR');
 
-        $configXml = simplexml_load_file($configXmlPath);
-
-        return $configXml;
+        try {
+            $configXml = simplexml_load_file(self::$xmlFilePath, 'SimpleXMLElement', LIBXML_NOWARNING);
+            return $configXml;
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+            throw new InvalidXmlException();
+        }
     }
 
     /**
