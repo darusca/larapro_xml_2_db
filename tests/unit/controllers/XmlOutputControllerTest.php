@@ -4,7 +4,7 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 
-class XmlOutputControllerTest extends TestCase
+class XmlOutputControllerTest extends \PHPUnit_Framework_TestCase
 {
     public function tearDown()
     {
